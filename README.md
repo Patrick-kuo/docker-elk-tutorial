@@ -400,7 +400,7 @@ docker run --log-driver=gelf --log-opt gelf-address=udp://0.0.0.0:12201 alpine e
 
 ![img](https://i.imgur.com/TobRFjw.png)
 
-參考: ELK官網有相同Issue， log 都會變成亂碼，需要更改logstash.conf內的udp/tcp為 beats即可，就不會收到了
+參考: ELK官網有相同[Issue](https://github.com/elastic/logstash/issues/2881#issuecomment-294138763)， log 都會變成亂碼，需要更改logstash.conf內的udp/tcp為 beats即可，就不會收到了
 
 
 docker logging 詳細可參考 [https://docs.docker.com/engine/admin/logging/overview/](https://docs.docker.com/engine/admin/logging/overview/)
